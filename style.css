@@ -1,0 +1,299 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+
+.left img {
+    width: 30%;
+}
+
+.main .left nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 61px;
+
+}
+
+.left nav .sign {
+    width: 100px;
+    height: 34px;
+    background-color: black;
+    border: none;
+    color: white;
+    border: none;
+
+
+}
+
+.left nav .sign:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    font-weight: 600;
+}
+
+.left nav button {
+    color: black;
+    background-color: transparent;
+    border: none;
+    margin-left: 32px;
+    /* margin-inline: 13px; */
+    font-size: 16px;
+    margin-top: 11px;
+}
+
+.meno-bar{
+ display: none;
+}
+
+.main .main-img {
+    width: 530px;
+}
+
+.food-img {
+    width: 80%;
+}
+
+ .main .text {
+    margin-left: 63px;
+    margin-top: 77px;
+}
+
+ .txt {
+    margin-left: 56px;
+    margin-top: 60px;
+
+}
+
+.txt h1 {
+    font-size: 39px;
+}
+
+.txt p {
+    padding-top: 16px;
+    font-size: 23px;
+    color: rgb(43, 42, 42);
+}
+
+.txt .inp {
+    display: flex;
+    margin-top: 22px;
+}
+
+.txt .inp input {
+    width: 400px;
+
+    border: 1px solid rgb(247, 90, 33);
+    border-right: none;
+    padding: 11px;
+    font-size: 17px;
+
+}
+
+.txt .inp button {
+    width: 120px;
+    height: 50px;
+    color: white;
+    background-color: rgb(250, 80, 18);
+    border: none;
+    font-size: 18px;
+    color: white;
+    
+}
+.text a img{ padding-top: 40px;
+
+}
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: rgb(36, 19, 7);
+    text-align: center;
+    color: white;
+    padding: 44px;
+}
+
+.card .crd img {
+    width: 33%;
+
+}
+
+.rest {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.rest img {
+    width: 32%;
+}
+
+.text {
+    width: 50%;
+    padding-top: 84px;
+    padding-left: 30px;
+
+}
+
+ .text h1 {
+    font-size: 44px;
+}
+ .text p {
+    margin-top: 11px;
+
+}
+
+.text .img {
+    padding-top: 22px;
+}
+.phone-img{
+    width: 50%;
+    height: 60vh;
+}
+.phone-img img{
+    width: 46%;
+   
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    color: white;
+    background-color: black;
+    padding: 44px;
+}
+
+.footer .lists {
+    margin-inline: 33px;
+
+}
+
+.footer .lists img {
+    width: 53%;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-top: 11px;
+}
+
+
+
+
+
+@media(max-width :768px) {
+    .main {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: auto;
+    }
+
+    .main .left nav {
+        width: 100%;
+        height: auto;
+    }
+
+    .left .txt {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding-right: 90px;
+    }
+   .btn{
+    display: none;
+   }
+ 
+
+    .meno-bar{
+        display: block;
+     text-decoration: none;
+     list-style: none;
+     font-size: 30px;
+     padding-left: 30px;
+
+    }
+    .meno-bar a{
+        color: black;
+    }
+
+    .txt p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left .txt h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .txt .inp {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .food-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .food-img img {
+        width: 100%;
+    }
+    
+    .card{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+  
+
+    .phone-img{
+        display: none;
+    }
+     
+    .text{
+        width: 100%;
+        height: 60vh;
+       text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .text img{
+        margin-top: 40px;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 40px;
+    }
+   
+   .lists img{
+        width: 30px;
+        height: 70px;
+       
+    }
+}
